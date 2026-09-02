@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { fleet } from "@/data/fleet";
 import VehiclePhoto from "@/components/fleet/VehiclePhoto";
+import Reveal from "@/components/shared/Reveal";
 
 export default function FleetPreview() {
   const fleetPreview = fleet.slice(0, 3);
@@ -19,10 +20,11 @@ export default function FleetPreview() {
           View all vehicles →
         </Link>
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 20 }}>
+      <Reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 20 }}>
         {fleetPreview.map((v) => (
           <div
             key={v.name}
+            className="card-zoom"
             style={{ background: "#fff", border: "1px solid #E1E4E8", borderRadius: 14, overflow: "hidden", display: "flex", flexDirection: "column" }}
           >
             <VehiclePhoto vehicle={v} />
@@ -58,7 +60,7 @@ export default function FleetPreview() {
             </div>
           </div>
         ))}
-      </div>
+      </Reveal>
     </section>
   );
 }

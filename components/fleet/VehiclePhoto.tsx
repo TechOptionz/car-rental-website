@@ -13,6 +13,7 @@ export default function VehiclePhoto({ vehicle: v }: { vehicle: Vehicle }) {
         alt={v.name}
         fill
         sizes="(max-width: 960px) 100vw, 400px"
+        className="zoom-img"
         style={{ objectFit: "cover" }}
       />
     </div>

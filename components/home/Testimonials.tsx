@@ -1,4 +1,5 @@
 import { testimonials } from "@/data/testimonials";
+import Reveal from "@/components/shared/Reveal";
 
 export default function Testimonials() {
   return (
@@ -12,7 +13,7 @@ export default function Testimonials() {
             <span style={{ color: "#F2B84B", letterSpacing: 2 }}>★★★★★</span> 4.9 from 180+ Google reviews
           </div>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 20 }}>
+        <Reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 20 }}>
           {testimonials.map((t) => (
             <figure
               key={t.name}
@@ -34,7 +35,7 @@ export default function Testimonials() {
               </figcaption>
             </figure>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

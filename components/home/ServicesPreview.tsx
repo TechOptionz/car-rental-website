@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { services } from "@/data/services";
+import Reveal from "@/components/shared/Reveal";
 
 export default function ServicesPreview() {
   return (
@@ -14,7 +15,7 @@ export default function ServicesPreview() {
         Every car meets platform vehicle requirements and comes ready to drive. You bring your licence and your account;
         we handle the rest.
       </p>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 20 }}>
+      <Reveal style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 20 }}>
         {services.map((s) => (
           <Link
             key={s.title}
@@ -55,7 +56,7 @@ export default function ServicesPreview() {
             <span style={{ fontWeight: 700, color: "#2E6DB4" }}>Learn more →</span>
           </Link>
         ))}
-      </div>
+      </Reveal>
     </section>
   );
 }
