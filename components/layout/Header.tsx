@@ -21,14 +21,20 @@ export default function Header() {
           gap: 16,
         }}
       >
-        <Link href="/" aria-label="Motorana home" onClick={closeMenu} style={{ display: "flex", alignItems: "center" }}>
+        <Link
+          href="/"
+          aria-label="Motorana home"
+          onClick={closeMenu}
+          className="header-logo-link"
+          style={{ display: "flex", alignItems: "center" }}
+        >
           <Image
-            src="/assets/logo.png"
+            src="/assets/logo-bold.png"
             alt="Motorana Rideshare Rentals"
             width={1291}
             height={243}
             priority
-            style={{ height: 44, width: "auto", display: "block", objectFit: "contain" }}
+            className="header-logo"
           />
         </Link>
 

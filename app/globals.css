@@ -383,3 +383,21 @@ details > summary::-webkit-details-marker {
   outline: 2px solid #2e6db4;
   outline-offset: 2px;
 }
+
+/* Header logo — mobile stays 44px (space is tight at 320px); desktop runs
+   larger and nudges left so the wordmark subtext stays readable. */
+.header-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+@media (min-width: 960px) {
+  .header-logo {
+    height: 56px;
+  }
+  .header-logo-link {
+    /* pull the logo art toward the page edge; the PNG has internal padding */
+    margin-left: -8px;
+  }
+}
