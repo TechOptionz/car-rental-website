@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import MobileStickyCTA from "@/components/layout/MobileStickyCTA";
 import BottomCTA from "@/components/shared/BottomCTA";
 import ChatWidget from "@/components/shared/ChatWidget";
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <MobileStickyCTA />
           <ChatWidget />
         </div>
+        <Analytics />
       </body>
     </html>
   );
