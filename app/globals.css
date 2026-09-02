@@ -1,0 +1,238 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f6f8;
+  color: #1d3557;
+  font-family: var(--font-source-sans), "Source Sans 3", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #2e6db4;
+  text-decoration: none;
+}
+a:hover {
+  color: #1d3557;
+  text-decoration: underline;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 16px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #2e6db4;
+  outline-offset: 1px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.25s ease;
+}
+
+/* Typography helpers */
+.font-heading {
+  font-family: var(--font-montserrat), Montserrat, sans-serif;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Buttons — colors + hover states from the source (paddings stay inline per use) */
+.btn-navy {
+  background: #1d3557;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-navy:hover {
+  background: #274a7a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline-navy {
+  border: 2px solid #1d3557;
+  color: #1d3557;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-outline-navy:hover {
+  background: #f0f3f7;
+  color: #1d3557;
+  text-decoration: none;
+}
+
+.btn-white {
+  background: #fff;
+  color: #1d3557;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-white:hover {
+  background: #e9edf3;
+  color: #1d3557;
+  text-decoration: none;
+}
+
+.btn-outline-white {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-outline-white:hover {
+  border-color: #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header nav link */
+.nav-link {
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1d3557;
+  text-decoration: none;
+}
+.nav-link:hover {
+  background: #f0f3f7;
+  color: #1d3557;
+  text-decoration: none;
+}
+
+/* Home service card hover elevation */
+.service-card {
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(29, 53, 87, 0.12);
+  text-decoration: none;
+  color: #1d3557;
+}
+
+/* No-underline link helpers */
+.no-underline:hover {
+  text-decoration: none;
+}
+.link-arrow {
+  font-weight: 700;
+}
+
+/* Image / map placeholders (striped) */
+.ph-stripes {
+  background: repeating-linear-gradient(135deg, #e6e9ee 0 10px, #eef1f5 10px 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 12px;
+  color: #5b6572;
+}
+
+/* details/summary list marker removal (matches source list-style:none) */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chat option / launcher hovers */
+.chat-opt:hover {
+  background: #f0f3f7;
+}
+.chat-launcher:hover {
+  background: #274a7a;
+}
+.btn-navy-solid:hover {
+  background: #274a7a;
+}
+
+/* Footer links */
+.footer-link {
+  color: #d6dae0;
+  font-size: 15px;
+}
+.footer-muted-link {
+  color: #a2a9b1;
+}
+
+/* Responsive visibility — source switches at 960px via matchMedia */
+.desktop-only {
+  display: none !important;
+}
+.mobile-only {
+  display: flex;
+}
+@media (min-width: 960px) {
+  .desktop-only {
+    display: flex !important;
+  }
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* Mobile sticky CTA bar — mobile only, hidden on desktop */
+.sticky-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  background: #fff;
+  border-top: 1px solid #e1e4e8;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+}
+@media (min-width: 960px) {
+  .sticky-bar {
+    display: none;
+  }
+}
+
+/* Chat position: lifted above the sticky bar only while the bar is showing */
+.chat-fixed {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 70;
+}
+@media (max-width: 959.98px) {
+  .chat-fixed.chat-raised {
+    bottom: 84px;
+  }
+}
