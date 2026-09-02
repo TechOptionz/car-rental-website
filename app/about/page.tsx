@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/shared/PageHero";
-import Placeholder from "@/components/shared/Placeholder";
 import { values, credentials } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -27,7 +27,15 @@ export default function AboutPage() {
           alignItems: "center",
         }}
       >
-        <Placeholder label="photo: team at depot" aspectRatio="4/3" style={{ borderRadius: 14, border: "1px solid #E1E4E8" }} />
+        <div style={{ aspectRatio: "4/3", position: "relative", borderRadius: 14, border: "1px solid #E1E4E8", overflow: "hidden" }}>
+          <Image
+            src="/assets/photos/team-depot.jpg"
+            alt="Motorana team at the depot"
+            fill
+            sizes="(max-width: 960px) 100vw, 580px"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           {values.map((v) => (
             <div key={v.title}>
