@@ -55,19 +55,21 @@ export default function AboutPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 16 }}>
             {credentials.map((c) => (
               <div
-                key={c}
+                key={c.label}
                 style={{
                   border: "1px solid #E1E4E8",
                   borderRadius: 10,
-                  padding: "22px 16px",
+                  padding: "22px 16px 18px",
                   textAlign: "center",
-                  fontFamily: "monospace",
-                  fontSize: 12,
-                  color: "#5B6572",
-                  background: "repeating-linear-gradient(135deg,#F5F6F8 0 8px,#fff 8px 16px)",
+                  background: "#fff",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: 12,
                 }}
               >
-                [ logo: {c} ]
+                <Image src={c.image} alt={c.alt} width={96} height={96} style={{ width: 96, height: 96, objectFit: "contain" }} />
+                <span style={{ fontSize: 14, fontWeight: 600, color: "#1F2937", lineHeight: 1.35 }}>{c.label}</span>
               </div>
             ))}
           </div>

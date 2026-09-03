@@ -34,9 +34,9 @@ export default function FleetView() {
                   style={{
                     padding: "10px 16px",
                     borderRadius: 999,
-                    border: `1px solid ${active ? "#1D3557" : "#C9CED6"}`,
-                    background: active ? "#1D3557" : "#fff",
-                    color: active ? "#fff" : "#1D3557",
+                    border: `1px solid ${active ? "#005C46" : "#C9CED6"}`,
+                    background: active ? "#005C46" : "#fff",
+                    color: active ? "#fff" : "#005C46",
                     fontWeight: 700,
                     fontSize: 14,
                     cursor: "pointer",

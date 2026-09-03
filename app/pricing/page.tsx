@@ -41,7 +41,7 @@ export default function PricingPage() {
                     top: -12,
                     left: 24,
                     background: "#F2B84B",
-                    color: "#1D3557",
+                    color: "#005C46",
                     fontSize: 12,
                     fontWeight: 800,
                     padding: "5px 10px",

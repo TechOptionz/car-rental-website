@@ -114,7 +114,7 @@ export default function ContactForm() {
             type="submit"
             className="btn-navy-solid"
             style={{
-              background: "#1D3557",
+              background: "#005C46",
               color: "#fff",
               border: 0,
               padding: 16,

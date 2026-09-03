@@ -36,7 +36,7 @@ export default function HowItWorksPage() {
                   width: 44,
                   height: 44,
                   borderRadius: "50%",
-                  background: "#1D3557",
+                  background: "#005C46",
                   color: "#fff",
                   display: "inline-flex",
                   alignItems: "center",

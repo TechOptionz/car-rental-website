@@ -4,7 +4,7 @@ import QuickEnquiryForm from "./QuickEnquiryForm";
 
 export default function Hero() {
   return (
-    <section style={{ background: "#1D3557", color: "#fff" }}>
+    <section style={{ background: "#005C46", color: "#fff" }}>
       <div
         className="container"
         style={{

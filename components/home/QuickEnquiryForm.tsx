@@ -27,7 +27,7 @@ export default function QuickEnquiryForm() {
       onSubmit={submit}
       style={{
         background: "#fff",
-        color: "#1D3557",
+        color: "#005C46",
         borderRadius: 14,
         padding: "26px 22px",
         boxShadow: "0 20px 60px rgba(0,0,0,.25)",
@@ -70,7 +70,7 @@ export default function QuickEnquiryForm() {
             className="btn-navy-solid"
             style={{
               marginTop: 6,
-              background: "#1D3557",
+              background: "#005C46",
               color: "#fff",
               border: 0,
               padding: 16,

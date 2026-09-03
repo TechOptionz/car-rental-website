@@ -5,7 +5,7 @@ import { cityData } from "@/data/locations";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#12233A", color: "#D6DAE0" }}>
+    <footer style={{ background: "#003E30", color: "#D6DAE0" }}>
       <div
         className="container"
         style={{
@@ -19,8 +19,8 @@ export default function Footer() {
           <Image
             src="/assets/logo-white.png"
             alt="Motorana Rideshare Rentals"
-            width={1291}
-            height={243}
+            width={2004}
+            height={387}
             style={{ height: 40, width: "auto", alignSelf: "flex-start", objectFit: "contain" }}
           />
           <p style={{ margin: 0, fontSize: 14, lineHeight: 1.55, maxWidth: 300 }}>

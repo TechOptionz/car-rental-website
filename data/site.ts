@@ -27,10 +27,10 @@ export const trustStats = [
 export const platforms = ["Uber", "Uber Eats", "DiDi", "Ola", "DoorDash", "Menulog"];
 
 export const credentials = [
-  "Uber Vehicle Solutions partner",
-  "DiDi approved supplier",
-  "Insurer logo",
-  "Roadside assist partner",
+  { label: "Uber Vehicle Solutions partner", image: "/assets/partners/platform-partner.jpg", alt: "Approved rideshare vehicle badge" },
+  { label: "DiDi approved supplier", image: "/assets/partners/approved-supplier.jpg", alt: "Approved supplier handshake badge" },
+  { label: "Comprehensive insurance partner", image: "/assets/partners/insurer.jpg", alt: "Insurance shield badge" },
+  { label: "Roadside assist partner", image: "/assets/partners/roadside-assist.jpg", alt: "Roadside assistance tow truck badge" },
 ];
 
 export const values = [

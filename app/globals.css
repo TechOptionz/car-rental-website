@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: #f5f6f8;
-  color: #1d3557;
+  color: #005c46;
   font-family: var(--font-source-sans), "Source Sans 3", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #1d3557;
+  color: #005c46;
   text-decoration: underline;
 }
 
@@ -63,41 +63,41 @@ textarea:focus {
 
 /* Buttons — colors + hover states from the source (paddings stay inline per use) */
 .btn-navy {
-  background: #1d3557;
+  background: #005c46;
   color: #fff;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
 }
 .btn-navy:hover {
-  background: #274a7a;
+  background: #127a5e;
   color: #fff;
   text-decoration: none;
 }
 
 .btn-outline-navy {
-  border: 2px solid #1d3557;
-  color: #1d3557;
+  border: 2px solid #005c46;
+  color: #005c46;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
 }
 .btn-outline-navy:hover {
   background: #f0f3f7;
-  color: #1d3557;
+  color: #005c46;
   text-decoration: none;
 }
 
 .btn-white {
   background: #fff;
-  color: #1d3557;
+  color: #005c46;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
 }
 .btn-white:hover {
   background: #e9edf3;
-  color: #1d3557;
+  color: #005c46;
   text-decoration: none;
 }
 
@@ -120,12 +120,12 @@ textarea:focus {
   border-radius: 6px;
   font-weight: 600;
   font-size: 15px;
-  color: #1d3557;
+  color: #005c46;
   text-decoration: none;
 }
 .nav-link:hover {
   background: #f0f3f7;
-  color: #1d3557;
+  color: #005c46;
   text-decoration: none;
 }
 
@@ -135,9 +135,9 @@ textarea:focus {
 }
 .service-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(29, 53, 87, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 92, 70, 0.12);
   text-decoration: none;
-  color: #1d3557;
+  color: #005c46;
 }
 
 /* No-underline link helpers */
@@ -172,10 +172,10 @@ details > summary::-webkit-details-marker {
   background: #f0f3f7;
 }
 .chat-launcher:hover {
-  background: #274a7a;
+  background: #127a5e;
 }
 .btn-navy-solid:hover {
-  background: #274a7a;
+  background: #127a5e;
 }
 
 /* Footer links */

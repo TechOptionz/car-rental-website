@@ -36,7 +36,7 @@ export default function FaqPage() {
         <div
           style={{
             marginTop: 24,
-            background: "#1D3557",
+            background: "#005C46",
             color: "#fff",
             borderRadius: 14,
             padding: 26,

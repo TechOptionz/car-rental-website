@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/shared/PageHero";
-import Placeholder from "@/components/shared/Placeholder";
+import Image from "next/image";
 import { CITY, PHONE, PHONE_TEL, HOURS } from "@/data/site";
 import { cityData } from "@/data/locations";
 
@@ -44,11 +44,15 @@ export default function ServiceAreasPage() {
           </p>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          <Placeholder
-            label="embedded map: depot location"
-            aspectRatio="4/3"
-            style={{ borderRadius: 14, border: "1px solid #E1E4E8" }}
-          />
+          <div style={{ aspectRatio: "4/3", position: "relative", borderRadius: 14, border: "1px solid #E1E4E8", overflow: "hidden" }}>
+            <Image
+              src="/assets/maps/service-area-map.jpg"
+              alt={`Map of Motorana's service coverage across Greater ${CITY}`}
+              fill
+              sizes="(max-width: 960px) 100vw, 520px"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
           <div style={{ background: "#fff", border: "1px solid #E1E4E8", borderRadius: 14, padding: 22 }}>
             <h2 className="font-heading" style={{ margin: "0 0 8px", fontSize: 18, fontWeight: 700 }}>
               {CITY} depot

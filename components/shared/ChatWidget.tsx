@@ -198,7 +198,7 @@ export default function ChatWidget() {
         aria-label="Open chat"
         className={`chat-fixed chat-launcher${raised ? " chat-raised" : ""}`}
         style={{
-          background: "#1D3557",
+          background: "#005C46",
           color: "#fff",
           border: 0,
           borderRadius: 999,
@@ -209,7 +209,7 @@ export default function ChatWidget() {
           fontWeight: 700,
           fontSize: 15,
           cursor: "pointer",
-          boxShadow: "0 12px 30px rgba(29,53,87,.35)",
+          boxShadow: "0 12px 30px rgba(0,92,70,.35)",
         }}
       >
         <span
@@ -218,7 +218,7 @@ export default function ChatWidget() {
             height: 26,
             borderRadius: "50%",
             background: "#fff",
-            color: "#1D3557",
+            color: "#005C46",
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
@@ -249,8 +249,8 @@ export default function ChatWidget() {
         animation: "fadeUp .2s ease",
       }}
     >
-      <div style={{ background: "#1D3557", color: "#fff", padding: "14px 16px", display: "flex", alignItems: "center", gap: 12 }}>
-        <Image src="/assets/icon-white.png" alt="" width={278} height={243} style={{ height: 28, width: "auto", objectFit: "contain" }} />
+      <div style={{ background: "#005C46", color: "#fff", padding: "14px 16px", display: "flex", alignItems: "center", gap: 12 }}>
+        <Image src="/assets/icon-white.png" alt="" width={435} height={435} style={{ height: 28, width: "auto", objectFit: "contain" }} />
         <div style={{ flex: 1 }}>
           <div style={{ fontWeight: 700, fontFamily: "var(--font-montserrat), Montserrat, sans-serif", fontSize: 15 }}>
             Motorana Assistant
@@ -272,8 +272,8 @@ export default function ChatWidget() {
             key={i}
             style={{
               alignSelf: m.from === "me" ? "flex-end" : "flex-start",
-              background: m.from === "me" ? "#1D3557" : "#fff",
-              color: m.from === "me" ? "#fff" : "#1D3557",
+              background: m.from === "me" ? "#005C46" : "#fff",
+              color: m.from === "me" ? "#fff" : "#005C46",
               padding: "10px 14px",
               borderRadius: 14,
               maxWidth: "85%",
@@ -295,8 +295,8 @@ export default function ChatWidget() {
                 onClick={o.act}
                 className="chat-opt"
                 style={{
-                  border: "1px solid #1D3557",
-                  color: "#1D3557",
+                  border: "1px solid #005C46",
+                  color: "#005C46",
                   background: "#fff",
                   padding: "9px 12px",
                   borderRadius: 999,
@@ -329,7 +329,7 @@ export default function ChatWidget() {
               type="submit"
               className="btn-navy-solid"
               style={{
-                background: "#1D3557",
+                background: "#005C46",
                 color: "#fff",
                 border: 0,
                 padding: "12px 16px",

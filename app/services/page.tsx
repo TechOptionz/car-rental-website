@@ -43,7 +43,7 @@ export default function ServicesPage() {
                   width: 48,
                   height: 48,
                   borderRadius: 12,
-                  background: "#1D3557",
+                  background: "#005C46",
                   color: "#fff",
                   display: "inline-flex",
                   alignItems: "center",

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/shared/PageHero";
-import Placeholder from "@/components/shared/Placeholder";
+import Image from "next/image";
 import ContactForm from "@/components/forms/ContactForm";
 import { PHONE, PHONE_TEL, EMAIL, HOURS } from "@/data/site";
 import { cityData } from "@/data/locations";
@@ -35,7 +35,7 @@ export default function ContactPage() {
             href={`tel:${PHONE_TEL}`}
             className="btn-navy-solid no-underline"
             style={{
-              background: "#1D3557",
+              background: "#005C46",
               color: "#fff",
               borderRadius: 14,
               padding: 24,
@@ -86,7 +86,15 @@ export default function ContactPage() {
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </p>
           </div>
-          <Placeholder label="embedded map" aspectRatio="4/3" style={{ borderRadius: 14, border: "1px solid #E1E4E8" }} />
+          <div style={{ aspectRatio: "4/3", position: "relative", borderRadius: 14, border: "1px solid #E1E4E8", overflow: "hidden" }}>
+            <Image
+              src="/assets/maps/depot-map.jpg"
+              alt={`Map of the Motorana ${cityData.city} depot location`}
+              fill
+              sizes="(max-width: 960px) 100vw, 520px"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
         </div>
       </section>
     </>

@@ -29,7 +29,7 @@ export default function ServicesPreview() {
               display: "flex",
               flexDirection: "column",
               gap: 10,
-              color: "#1D3557",
+              color: "#005C46",
               textDecoration: "none",
             }}
           >
@@ -44,7 +44,7 @@ export default function ServicesPreview() {
                 alignItems: "center",
                 justifyContent: "center",
                 fontWeight: 800,
-                color: "#1D3557",
+                color: "#005C46",
               }}
             >
               {s.mark}

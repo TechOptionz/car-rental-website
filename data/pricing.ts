@@ -11,9 +11,9 @@ export interface Plan {
 }
 
 export const plans: Plan[] = [
-  { name: "Flexible weekly", price: "$259", desc: "Rolling weekly. Return with 7 days notice.", points: ["All insurance and rego included", "Servicing and roadside assist", "Swap car if yours is off the road", "No exit fees"], bg: "#fff", color: "#1D3557", btnBg: "#1D3557", btnColor: "#fff" },
-  { name: "4-week plan", price: "$239", desc: "Commit to four weeks and save.", points: ["Everything in Flexible", "Lower weekly rate", "Priority vehicle choice", "Reduced bond"], bg: "#1D3557", color: "#fff", btnBg: "#fff", btnColor: "#1D3557", popular: true },
-  { name: "12-week plan", price: "$219", desc: "Our lowest rate for committed full-time drivers.", points: ["Everything in 4-week", "Save up to 15%", "Holiday pause option", "Free vehicle upgrade after 12 weeks"], bg: "#fff", color: "#1D3557", btnBg: "#1D3557", btnColor: "#fff" },
+  { name: "Flexible weekly", price: "$259", desc: "Rolling weekly. Return with 7 days notice.", points: ["All insurance and rego included", "Servicing and roadside assist", "Swap car if yours is off the road", "No exit fees"], bg: "#fff", color: "#005C46", btnBg: "#005C46", btnColor: "#fff" },
+  { name: "4-week plan", price: "$239", desc: "Commit to four weeks and save.", points: ["Everything in Flexible", "Lower weekly rate", "Priority vehicle choice", "Reduced bond"], bg: "#005C46", color: "#fff", btnBg: "#fff", btnColor: "#005C46", popular: true },
+  { name: "12-week plan", price: "$219", desc: "Our lowest rate for committed full-time drivers.", points: ["Everything in 4-week", "Save up to 15%", "Holiday pause option", "Free vehicle upgrade after 12 weeks"], bg: "#fff", color: "#005C46", btnBg: "#005C46", btnColor: "#fff" },
 ];
 
 export const included = [

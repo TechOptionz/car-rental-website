@@ -3,7 +3,7 @@ import Reveal from "@/components/shared/Reveal";
 
 export default function Testimonials() {
   return (
-    <section style={{ background: "#1D3557", color: "#fff" }}>
+    <section style={{ background: "#005C46", color: "#fff" }}>
       <div className="container" style={{ padding: "clamp(48px,7vw,88px) 16px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "end", gap: 16, flexWrap: "wrap", marginBottom: 32 }}>
           <h2 className="font-heading" style={{ margin: 0, fontSize: "clamp(26px,3.5vw,38px)", fontWeight: 700, lineHeight: 1.15 }}>

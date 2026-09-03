@@ -5,7 +5,7 @@ export default function PromoBar() {
   return (
     <div
       style={{
-        background: "#1D3557",
+        background: "#005C46",
         color: "#fff",
         fontSize: 14,
         textAlign: "center",
